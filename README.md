@@ -1,16 +1,45 @@
-# React + Vite
+# 🎬 Movie App - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
 
-Currently, two official plugins are available:
+Cette application est une plateforme simple développée avec React permettant d'afficher, filtrer et gérer une liste de films ou séries TV.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+L'objectif principal est de manipuler les composants React ainsi que les hooks comme `useState`.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Objectifs du projet
 
-## Expanding the ESLint configuration
+- Créer une interface pour afficher des films 🎬
+- Utiliser les hooks React (`useState`)
+- Mettre en place un système de filtrage 🔎
+- Permettre l’ajout de nouveaux films ➕
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧱 Structure des composants
+
+### 🔹 MovieCard
+Affiche les informations d’un seul film :
+- Titre
+- Description
+- Image (poster)
+- Note
+
+---
+
+### 🔹 MovieList
+- Reçoit une liste de films
+- Affiche plusieurs `MovieCard` avec `.map()`
+
+---
+
+### 🔹 Filtre
+- Permet de filtrer les films par :
+  - titre 🔎
+  - note ⭐
+- Envoie les valeurs de recherche vers le composant parent
+
+---
+
+ 

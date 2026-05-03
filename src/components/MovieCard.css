@@ -1,0 +1,51 @@
+.movie-card {
+  width: 18rem;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #0f172a;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.image-container {
+  position: relative;
+}
+
+.movie-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.rating-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: gold;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.movie-description {
+  font-size: 13px;
+  color: #cbd5e1;
+  height: 60px;
+  overflow: hidden;
+}
+
+ 
